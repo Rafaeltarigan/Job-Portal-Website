@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #000000;
+}
+
+/* Global CSS */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+#w-btn {
+    margin-left: 40px;
+    background: rgb(255, 255, 255);
+    color: rgb(75, 138, 75);
+    padding: 9px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: none;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#w-btn:hover {
+    background: linear-gradient(45deg, #00C176, #00E676);;
+    color: #ffff;
+}
+
+#g-btn {
+    text-decoration: none;
+    background: linear-gradient(45deg, #00C176, #00E676);
+    color: #ffff;
+    padding: 9px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#g-btn:hover {
+    background: linear-gradient(90deg, #00C176, #00E676);
+}
+
+.sec-space {
+  padding: 4rem 0;
+}
+
+.extra-space {
+  padding-top: 8rem;
+}
+
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+    background-color: rgb(24, 24, 24);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo {
+    width: 180px;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+#menu li a {
+    color: rgba(255, 255, 255, 0.517);
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#menu li a:hover {
+    color: #ffff;
+}
+
+#bar {
+    color: #ffff;
+    display: none;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
+    background-blend-mode: overlay;
+    z-index: -1;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.h-left {
+    width: 50%;
+    color: #ffffff;
+}
+
+.h-left p {
+    padding: 1.8rem 0.7rem;
+}
+
+.h-right {
+    width: 50%;
+}
+
+.h-right img {
+    width: 90%;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    height: 4rem;
+    background-color: #3838387b;
+    border: none;
+    color: #ffff;
+    border-radius: 35px;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search input:focus {
+    background-color: #817f7f19;
+    border: 1px solid #00E676;
+}
+
+.search input::placeholder {
+    color: #ffffff;
+}
+
+.search input:focus::placeholder {
+    color: #00E676;
+}
+
+.search a {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.features h2 {
+    color: #00E676;
+}
+
+.features p {
+    color: #ffff;
+}
+
+.features .fe-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.features .fe-box h3 {
+    color: #00E676;
+}
+
+.features .fe-box div {
+    width: 200px;
+}
+
+.features .fe-box img {
+    width: 50px;
+    margin-top: 3rem;
+}
+
+.jobs .job-id {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    box-shadow: 2px 2px 15px rgb(64, 109, 64);
+}
+
+.jobs h2 {
+    color: #00E676;
+}
+
+.jobs p {
+    color: #ffff;
+}
+
+.jobs .job-id li {
+    padding: 20px 40px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+.jobs .job-id li.active {
+    background: linear-gradient(45deg, #00C176, #00E676);
+    color: #ffff;
+}
+
+.jobs .jList {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid #00c17773;
+    align-items: center;
+    justify-items: start;
+    cursor: pointer;
+    color: #ffff;
+    padding: 2rem 2rem;
+    transition: 0.3s ease;
+}
+
+.jobs .jList.delete {
+    display: none;
+}
+
+.jobs .jList:hover {
+    background: linear-gradient(45deg, #00c17795, #00e67798);
+}
+
+.jobs .jList img {
+    width: 40px;
+}
+
+.jobs .jList h3 {
+    padding-bottom: 0;
+}
+
+.trust .t-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.trust h2 {
+    color: #00E676;
+}
+
+.trust p {
+    color: #ffff;
+}
+
+.trust .t-box img {
+    width: 145px;
+    object-fit: cover;
+}
+
+.team h2 {
+    color: #00E676;
+}
+
+.team p {
+    color: #ffff;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-container .f1-box {
+    border: 1px solid #00C176;
+    width: 280px;
+    padding: 2rem 0;
+    border-radius: 20px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-container .f1-box h3 {
+    color: #ffff;
+}
+
+.team-container .f1-box img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.skill {
+    padding-bottom: 3rem;
+}
+
+#key {
+    font-size: .8rem;
+    background-color: #3838388f;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: rgb(16, 16, 16);
+    color: #ffff;
+    padding: 4rem .8rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top .logo {
+    width: 190px;
+    margin-bottom: 1rem;
+}
+
+.top i {
+    color: #00E676;
+    font-size: 2rem;
+    margin-left: .8rem;
+}
+
+i.bxl-facebook-square:hover {
+    background: linear-gradient(45deg, #0064e7, #145dbf);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+i.bxl-instagram:hover {
+    background: linear-gradient(45deg, #E1306C, #b68824);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+i.bxl-linkedin:hover {
+    background: linear-gradient(45deg, #0077B5, #005582);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+i.bxl-youtube:hover {
+    background: linear-gradient(45deg, #FF0000, #cc0000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+i.bxl-twitter:hover {
+    background: linear-gradient(45deg, #1DA1F2, #1572a6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom {
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #858585;
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+
+.bottom a:hover {
+    color: #ffff;
+}
+
+@media (max-width:1200px) {
+    .obj-width {
+        width: 95%;
+    }
+}
+
+@media (max-width: 699px) {
+    #menu {
+        background-color: rgba(0, 0, 0, 0.658);
+        display: block;
+        width: 280px;
+        height: auto;
+        position: absolute;
+        top: 108px;
+        right: -100%;
+        padding: 30px 0;
+        box-shadow: 8px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 13px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    #menu.active {
+        right: 10px;
+        opacity: 1;
+    }
+
+    #menu li {
+        padding: 1rem;
+    }
+
+    #menu li a {
+        color: white;
+    }
+
+    #bar {
+        display: block;
+        font-size: 1.7rem;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    #w-btn {
+        margin: 20px 0 0 50px;
+        background: rgb(255, 255, 255);
+        color: rgb(75, 138, 75);
+    }
+
+    #navbar .logo {
+        width: 130px;
+        margin-left: 10px;
+    }
+
+    .hero-box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        align-items: start;
+        padding: 8rem 0;
+    }
+
+    .h-left {
+        width: 100%;
+    }
+
+    .h-right {
+        display: none;
+    }
+
+    .search input {
+        width: 90%;
+        height: 3.8rem;
+        border-radius: 35px;
+        padding: 0 10px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        margin-left: 15px;
+    }
+
+    #g-btn {
+        text-decoration: none;
+        background: linear-gradient(45deg, #00C176, #00E676);
+        color: #ffff;
+        padding: 9px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .search a {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        margin-right: 50px;
+        margin-left: 15px;
+    }
+
+    .features .fe-box div {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .features .fe-box {
+        flex-direction: column;
+    }
+
+    .features p {
+        margin: 0 40px;
+    }
+
+    .features h2 {
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }
+
+    .features p {
+        margin-left: 10px;
+    }
+
+    .jobs .job-id {
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .jobs h2 {
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }
+
+    .jobs p {
+        margin: 0 10px;
+    }
+
+    .jobs .job-id li {
+        padding: 20px 30px;
+        text-wrap: nowrap;
+    }
+
+    .jobs-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .jobs .jList {
+        width: 48%;
+        margin-top: 1rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+        padding: 2rem 1rem;
+        text-align: center;
+        justify-items: center;
+        margin: 0 2px;
+    }
+
+    .trust h2 {
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }
+
+    .trust p {
+        margin-left: 10px;
+    }
+
+    .trust .t-box img {
+        width: 100px;
+        margin: 0 15px;
+    }
+
+    .team h2 {
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }
+
+    .team p {
+        margin-left: 10px;
+    }
+
+    .team-container .f1-box {
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+
+    .skill {
+        padding-bottom: 1rem;
+    }
+
+    .top i {
+        margin: 1rem 0.9rem;
+        padding-left: 4px;
+    }
+
+    .bottom div {
+        width: 50%;
+        margin-bottom: 59px;
+    }
+
+    .bottom {
+        padding-left: 12px;
+    }
+
+    .top .logo {
+        width: 170px;
+        margin-bottom: .8rem;
+    }
+}
+
+@media (max-width:360px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .trust .t-box img {
+        width: 100px;
+        margin: 0 7px;
+    }
+
+    .top i {
+        color: #00E676;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .search input {
+        font-size: .8rem;
+    }
+
+    .bottom a {
+        text-decoration: none;
+        color: #858585;
+        line-height: 35px;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 4.3rem;
+        margin-right: 100px;
+        margin-left: 15px;
+    }
+
+    .search input {
+        width: 93%;
+        height: 3.8rem;
+        border-radius: 35px;
+        padding: 0 10px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:640px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-right: 100px;
+        margin-left: 15px;
+    }
+
+    .search input {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
