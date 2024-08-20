@@ -658,65 +658,143 @@ i.bxl-twitter:hover {
     }
 }
 
-@media (max-width:360px) {
-    h1 {
-        font-size: 2rem;
+@media (max-width:428px) {
+    #navbar .logo {
+        width: 110px;
     }
 
-    .trust .t-box img {
-        width: 100px;
-        margin: 0 7px;
+    h1 {
+        font-size: 2.2rem;
+        margin-right: 50px;
+        margin-left: 15px;
+    }
+
+    .features h2 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .features p {
+        font-size: 10px;
+    }
+
+    .features .fe-box img {
+        width: 40px;
+        margin-top: 3rem;
+    }
+
+    .jobs h2 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .jobs p {
+        margin: 0 10px;
+        font-size: 10px;
+    }
+
+    .trust h2 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .trust .t-box {
+        justify-content: center;
+    }
+
+    .team h2 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .top .logo {
+        width: 115px;
+        margin-left: -90px;
     }
 
     .top i {
-        color: #00E676;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .search input {
-        font-size: .8rem;
+        font-size: 1.8rem;
     }
 
     .bottom a {
-        text-decoration: none;
-        color: #858585;
-        line-height: 35px;
-        font-size: .8rem;
-    }
-}
-
-@media (max-width:600px) {
-    h1 {
-        font-size: 4.3rem;
-        margin-right: 100px;
-        margin-left: 15px;
-    }
-
-    .search input {
-        width: 93%;
-        height: 3.8rem;
-        border-radius: 35px;
-        padding: 0 10px;
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width:640px) {
-    h1 {
-        font-size: 2.2rem;
-        margin-right: 100px;
-        margin-left: 15px;
-    }
-
-    .search input {
-        width: 90%;
         font-size: 1rem;
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:360px) {
+    #navbar .logo {
+        width: 90px;
+    }
+
+    #bar {
+        font-size: 1.4rem;
+        margin-right: 15px;
+    }
+
     h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
+    }
+
+    .features .fe-box img {
+        width: 40px;
+        margin-top: 3rem;
+    }
+
+    .features h2 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .features p {
+        font-size: 10px;
+    }
+
+    .jobs h2 {
+        font-size: 1.4rem;
+    }
+
+    .jobs p {
+        font-size: 10px;
+    }
+
+    .trust h2 {
+        font-size: 1.2rem;
+    }
+
+    .trust p {
+        font-size: 10px;
+    }
+
+    .trust .t-box {
+        justify-content: center;
+    }
+
+    .trust .t-box img {
+        width: 90px;
+        margin: 0 15px;
+    }
+
+    .team h2 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .team p {
+        font-size: 10px;
+    }
+
+    .top .logo {
+        width: 110px;
+        margin-left: -80px;
+    }
+
+    .top i {
+        margin: 1rem 0.5rem;
+        padding-left: 4px;
+        font-size: 1rem;
+    }
+
+    .bottom a {
+        font-size: 1rem;
     }
 }
